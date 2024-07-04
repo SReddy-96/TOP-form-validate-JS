@@ -1,0 +1,106 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* --- */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+input:valid {
+  background: rgba(81, 255, 0, 0.527);
+}
+input:invalid {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #09a0a5;
+  color: #fff;
+}
+
+.shapedividers_com-3121 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-3121::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 69px 100%;
+  background-position: 100% 50%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.7 2000.4"><g fill="%2309a0a5"><path d="M20 2000h59V0H18c0 12 6 23 12 33 7 10 15 19 21 29 15 28 14 65-4 91-7 10-15 19-21 29a80 80 0 00-8 68 80 80 0 008 68c6 10 14 18 21 28 18 27 19 63 4 91-6 11-14 20-21 30s-12 21-12 33a33 33 0 000 4c0 12 6 23 12 33 7 10 15 19 21 29 15 28 14 65-4 92-7 9-15 18-21 28a80 80 0 00-8 68 80 80 0 008 68c6 10 14 18 21 28 18 27 19 63 4 91-6 11-14 20-21 30s-12 21-12 33a33 33 0 000 5c0 11 6 22 12 32 7 10 15 19 21 30 15 28 14 64-4 91-7 10-15 18-21 28a80 80 0 00-8 68 80 80 0 008 68c6 10 14 19 21 29 18 26 19 63 4 91-6 10-14 19-21 29l-3 6c-5 8-9 18-9 28a33 33 0 000 4c0 12 6 23 12 32l21 30 1 3a87 87 0 019 35 90 90 0 01-8 43 81 81 0 01-6 10l-6 9c-5 6-11 12-15 19a80 80 0 00-8 68 80 80 0 008 69l15 20 6 8a82 82 0 016 11 90 90 0 018 43 87 87 0 01-9 35l-1 2-21 30a79 79 0 00-10 20z" opacity=".75"/><path d="M79 478V23a33 33 0 00-20 17l-1 1a33 33 0 00-1 22 22 22 0 00-15 17 15 15 0 00-6 5 22 22 0 00-2 14 52 52 0 004 13l5 11c6 12 12 24 16 36 6 14 8 31 4 45l-2 5a157 157 0 01-26 41 151 151 0 0128 46c4 15 2 31-4 46-4 12-10 24-16 35l-5 11a52 52 0 00-4 14 22 22 0 002 13 15 15 0 006 6 22 22 0 0015 17 33 33 0 001 22l1 1a33 33 0 0020 17z" opacity=".5"/><path d="M79 504V0H65C55 6 49 20 53 32a37 37 0 005 9c6 8 13 15 16 24 3 12-4 25-12 35-7 7-14 15-19 23a43 43 0 00-3 7c-5 14-1 29 5 42 5 11 12 22 18 32l2 5c7 13 11 27 8 41 3 14-1 29-8 42l-2 4c-6 11-13 21-18 33-6 13-10 28-5 41a43 43 0 003 7c5 9 12 16 19 24 8 10 15 22 12 35-3 9-10 16-16 24a37 37 0 00-5 9c-5 14 5 31 19 35h7z"/><circle cx="29.3" cy="59.8" r="8.5"/><circle cx="32.6" cy="159.2" r="5.2"/><circle cx="32.6" cy="375.8" r="5.2"/><circle cx="36.6" cy="435.9" r="7.3"/><circle cx="5.8" cy="106.4" r="5.8" opacity=".5"/><circle cx="5.8" cy="321.2" r="5.8" opacity=".5"/><circle cx="5.8" cy="250.3" r="2.8" opacity=".75"/><path d="M79 982V527a33 33 0 00-20 17l-1 1a33 33 0 00-1 22 22 22 0 00-15 17 15 15 0 00-6 6 22 22 0 00-2 13 52 52 0 004 13l5 12c6 11 12 23 16 35 6 15 8 31 4 46l-2 4a157 157 0 01-26 41 151 151 0 0128 46c4 15 2 31-4 46-4 12-10 24-16 36l-5 11a52 52 0 00-4 13 22 22 0 002 14 15 15 0 006 5 22 22 0 0015 17 33 33 0 001 22l1 1a33 33 0 0020 17z" opacity=".5"/><path d="M79 1009V504H65c-10 7-16 20-12 32a37 37 0 005 9c6 8 13 15 16 24 3 12-4 25-12 35-7 8-14 15-19 24a43 43 0 00-3 7c-5 13-1 28 5 41 5 12 12 22 18 33l2 4c7 13 11 28 8 42 3 13-1 28-8 41l-2 5c-6 10-13 21-18 32-6 13-10 28-5 42a43 43 0 003 7c5 8 12 16 19 23 8 10 15 23 12 35-3 9-10 16-16 24a37 37 0 00-5 9c-4 14 5 31 19 35l7 1z"/><circle cx="29.3" cy="564" r="8.5"/><circle cx="32.6" cy="663.5" r="5.2"/><circle cx="32.6" cy="880.1" r="5.2"/><circle cx="36.6" cy="940.2" r="7.3"/><circle cx="5.8" cy="610.6" r="5.8" opacity=".5"/><circle cx="5.8" cy="825.5" r="5.8" opacity=".5"/><circle cx="5.8" cy="754.6" r="2.8" opacity=".75"/><path d="M79 1486v-454a33 33 0 00-20 16l-1 2a33 33 0 00-1 22 22 22 0 00-15 16 15 15 0 00-6 6 22 22 0 00-2 13 52 52 0 004 14l5 11c6 12 12 23 16 35 6 15 8 31 4 46l-2 5a157 157 0 01-27 41 151 151 0 0129 46c4 15 2 31-4 45-4 13-10 24-16 36l-5 11a52 52 0 00-4 13 22 22 0 002 14 15 15 0 006 6 22 22 0 0015 16 33 33 0 001 22l1 1a33 33 0 0020 17z" opacity=".5"/><path d="M79 1513v-504H65c-10 6-16 20-12 31a37 37 0 005 10c6 7 13 14 16 24 3 12-4 24-12 34-7 8-14 15-19 24a43 43 0 00-3 7c-5 14-1 29 5 42 5 11 12 21 18 32l2 5c7 13 11 27 8 41 3 14-1 28-8 41l-2 5c-6 11-13 21-18 32-6 13-10 28-5 42a43 43 0 003 7c5 9 12 16 19 24 8 10 15 22 12 34-3 10-10 16-16 24a37 37 0 00-5 10c-4 14 5 31 19 34l7 1z"/><circle cx="29.3" cy="1068.3" r="8.5"/><circle cx="32.6" cy="1167.8" r="5.2"/><circle cx="32.6" cy="1384.4" r="5.2"/><circle cx="36.6" cy="1444.5" r="7.3"/><circle cx="5.8" cy="1114.9" r="5.8" opacity=".5"/><circle cx="5.8" cy="1329.8" r="5.8" opacity=".5"/><circle cx="5.8" cy="1258.9" r="2.8" opacity=".75"/><path d="M79 1990v-454a33 33 0 00-20 17l-1 1a33 33 0 00-1 22 22 22 0 00-15 17 15 15 0 00-6 5 22 22 0 00-2 14 52 52 0 004 13l5 11c6 12 12 23 16 36 6 14 8 31 4 45l-2 5a157 157 0 01-27 41 151 151 0 0129 46c4 15 2 31-4 46-4 12-10 23-16 35l-5 11a52 52 0 00-4 14 22 22 0 002 13 15 15 0 006 6 22 22 0 0015 17 33 33 0 001 22l1 1a33 33 0 0020 16z" opacity=".5"/><path d="M54 2000h25v-487H65c-10 6-16 20-12 31a37 37 0 005 10c6 8 13 15 16 24 3 12-4 25-12 34l-1 1-18 23a43 43 0 00-3 7c-3 10-2 21 1 32a84 84 0 004 10c5 11 12 21 18 32l2 5c7 13 11 27 8 41 3 14-1 29-8 41l-2 5c-6 11-13 21-18 33a83 83 0 00-4 9c-3 10-5 22-1 32a43 43 0 003 7c5 9 12 16 18 23l1 1c8 10 15 22 12 35-3 9-10 16-16 24a37 37 0 00-5 9 26 26 0 001 18z"/><circle cx="29.3" cy="1572.6" r="8.5"/><circle cx="32.6" cy="1672.1" r="5.2"/><circle cx="32.6" cy="1888.7" r="5.2"/><circle cx="36.6" cy="1948.8" r="7.3"/><circle cx="5.8" cy="1619.2" r="5.8" opacity=".5"/><circle cx="5.8" cy="1834.1" r="5.8" opacity=".5"/><circle cx="5.8" cy="1763.2" r="2.8" opacity=".75"/></g></svg>');
+}
+
+#left-side {
+  background-image: url(https://images.unsplash.com/photo-1548766232-e0c28830f43e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input {
+  margin-bottom: 0.8rem;
+}
