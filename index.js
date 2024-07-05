@@ -34,6 +34,8 @@ form.addEventListener("submit", (event) => {
   } else if (!postcode.validity.valid) {
     checkPostcode("submit");
     event.preventDefault();
+  } else {
+    alert("Form was Successful!");
   }
 });
 

@@ -56,20 +56,25 @@ body {
 }
 
 input:valid {
-  background: rgba(81, 255, 0, 0.527);
+  border: 1px solid rgba(81, 255, 0);
 }
 input:invalid {
-  background: rgba(255, 0, 0, 0.3);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+input:focus {
+  outline: none;
+  border-width: 2px;
 }
 
 #form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
   width: 100%;
   height: 100%;
   padding: 2rem;
+  padding-left: 5rem;
   background-color: #09a0a5;
   color: #fff;
 }
@@ -101,6 +106,55 @@ input:invalid {
   background-size: cover;
 }
 
+select,
 input {
   margin-bottom: 0.8rem;
+}
+
+input {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #fefefe;
+  width: 80%;
+}
+
+#postcode {
+  width: 25%;
+}
+
+#validateButton {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #6c59da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  margin: 1rem 0;
+}
+
+#validateButton:hover {
+  background-color: #9a76ed;
+}
+
+#validateButton:active {
+  background-color: #9540c7;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+form p {
+  margin: 0.5rem 0;
+}
+
+#passwordSpan {
+  font-size: small;
 }
